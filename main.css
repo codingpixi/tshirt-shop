@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;*/
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 1000px;
+  background: white;
+  margin: 0 auto;
+}
+
+article {
+  height: auto;
+  width: 33%;
+  margin: 10px;
+}
+
+article img{
+  width:100%;
+}
+
+.product {
+  position: relative;
+  width: 100%;
+  border: 2px solid #81bce6;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-bottom-width: 0;
+  line-height: 0;
+}
+
+.square {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid #81bce6;
+  top: -2px;
+  right: -2px;
+}
+
+.square a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #81bce6;
+  width: 100%;
+  padding-top: .25rem;
+  text-decoration: none;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border: 1px solid #81bce6;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.icons {
+  color: #81bce6;
+  border: .5px solid #81bce6;
+  width: 20%;
+  padding: 1rem;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.icons:hover {
+  background-color: #81bce6;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+
+  flex: 1;
+  font-family: 'Lato', sans-serif;
+  color: #81bce6;
+  size: .5rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+/*
+.container menu {
+  display: flex;
+  width: 1000px;
+  background: white;
+  margin: 0 auto;
+}
+*/
+
+
+/*
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 3px;
+  border: 1px solid black;
+}
+*/
+
+/*.square {   WORKED BUT TRYING ABSOULTE ABOVE
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: 3px solid #81bce6;
+  top: -19px;
+  right: -265.5px;
+}*/
