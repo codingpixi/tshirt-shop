@@ -35,6 +35,19 @@ article img{
   line-height: 0;
 }
 
+.front {
+  position: absolute;
+}
+
+.back {
+  position: absolute;
+  top: 0px;
+  padding: 1rem;
+  align-items: center;
+  right: 5px;
+  transform: rotateY(90deg);
+}
+
 .square {
   position: absolute;
   width: 30px;
@@ -76,6 +89,7 @@ article img{
 
 .icons:hover {
   background-color: #81bce6;
+  color: white;
 }
 
 footer p {
