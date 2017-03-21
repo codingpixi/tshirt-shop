@@ -7,6 +7,22 @@
         box-sizing: border-box;*/
 }
 
+h1 {
+  text-transform:uppercase;
+  color: #81bce6;
+  font-size: 2rem;
+  padding: 0 .75rem;
+}
+
+hr {
+  color: #81bce6
+}
+
+ul {
+  font-family: 'Lato', sans-serif;
+  color: #81bce6;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -37,6 +53,7 @@ article img{
 
 .front {
   position: absolute;
+  transition: all 0.6s ease;
 }
 
 .back {
@@ -47,6 +64,18 @@ article img{
   right: 5px;
   transform: rotateY(90deg);
 }
+
+/* make original menu square not font awesome
+.colorsquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #81bce6;
+  width: 100%;
+  padding-top: .25rem;
+  text-decoration: none;
+}
+*/
 
 .square {
   position: absolute;
@@ -78,6 +107,10 @@ article img{
   box-sizing: border-box;
 }
 
+/*.menu:hover {
+  display: none;
+}*/
+
 .icons {
   color: #81bce6;
   border: .5px solid #81bce6;
@@ -93,7 +126,7 @@ article img{
 }
 
 .size {
-  display: flex;
+  display: inline-block;
   /*flex-wrap: wrap;*/
   position: absolute;
   background: white;
@@ -102,30 +135,53 @@ article img{
   padding: .25rem;
   /*margin: 10px auto;*/
   bottom: 56px;
-  right: 150px;
+  /*right: 150px;*/
   justify-content: center;
   align-items: center;
   border: 2px solid #81bce6;
 }
 
-.small {
+.size:hover {
+  display: block;
+}
+
+.size img {
+  width: inherit;
+}
+
+.xlarge {
+  width: 35px;
+  height: 35px;
+  /*background-color: #81bce6;*/
+  padding: 2px;
+  margin: 2.5px;
+  justify-content: center;
+}
+
+.large {
   width: 30px;
   height: 30px;
   /*background-color: #81bce6;*/
   padding: 2px;
   margin: 2.5px;
+  justify-content: center;
 }
 
 .medium {
-
+  width: 25px;
+  height: 25px;
+  /*background-color: #81bce6;*/
+  padding: 2px;
+  margin: 2.5px;
+  justify-content: center;
 }
 
-.large {
-
-}
-
-.xlarge {
-
+.small {
+  width: 20px;
+  height: 20px;
+  /*background-color: #81bce6;*/
+  padding: 2px;
+  margin: 2.5px;
 }
 
 .colors {
@@ -151,6 +207,8 @@ article img{
   background-color: #81bce6;
   padding: 2px;
   margin: 2.5px;
+  /*position: absolute;
+  left: 125px;*/
 }
 
 .pink {
@@ -180,11 +238,10 @@ article img{
   margin: 2.5px;
 }
 
-footer p {
+footer {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
-
   flex: 1;
   font-family: 'Lato', sans-serif;
   color: #81bce6;
@@ -192,6 +249,11 @@ footer p {
 }
 
 .price {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.dollar-symbol {
   font-weight: bold;
   font-size: 1.25rem;
 }
