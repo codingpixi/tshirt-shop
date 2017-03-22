@@ -5,12 +5,17 @@ function logEvent() {
   console.log(event);
   }
 
+  var totalPrice = 0;
+
 
   function shopCart1() {
    let ul = document.querySelector("ul");
    let li = document.createElement("li");
    li.textContent = "Save my trees $29";
    ul.appendChild(li);
+   totalPrice = totalPrice + 29;
+   let price = document.querySelector("#totalPrice");
+   price.textContent = totalPrice;
   }
 
   function shopCart2() {
@@ -18,6 +23,9 @@ function logEvent() {
    let li = document.createElement("li");
    li.textContent = "Nature Lover $19";
    ul.appendChild(li);
+   totalPrice = totalPrice + 19;
+   let price = document.querySelector("#totalPrice");
+   price.textContent = totalPrice;
   }
 
   function shopCart3() {
@@ -25,6 +33,9 @@ function logEvent() {
    let li = document.createElement("li");
    li.textContent = "Forrest Walk $39";
    ul.appendChild(li);
+   totalPrice = totalPrice + 39;
+   let price = document.querySelector("#totalPrice");
+   price.textContent = totalPrice;
   }
 
   let purchaseShirt = document.querySelectorAll(".shopCart");
