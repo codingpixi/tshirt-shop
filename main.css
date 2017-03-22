@@ -110,24 +110,27 @@ article img {
     color: white;
 }
 
-.size {
-    display: inline-block;
-    /*flex-wrap: wrap;*/
-    position: absolute;
-    background: white;
-    height: 140px;
-    width: 65px;
-    padding: .25rem;
-    /*margin: 10px auto;*/
-    bottom: 56px;
-    /*right: 150px;*/
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #81bce6;
+.size-button:hover + .size {
+    opacity: 1;
 }
 
-.size:hover {
-    display: block;
+.size-button + .size{
+    transition: opacity 2s;
+}
+
+.size {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 150px;
+    width: 50px;
+    /*padding: .25rem;
+    margin: 10px auto;*/
+    bottom: 56px;
+    align-items: center;
+    border: 2px solid #81bce6;
+    opacity: 0;
 }
 
 .size img {
@@ -135,48 +138,52 @@ article img {
 }
 
 .xlarge {
-    position: relative;
-    width: 100%;
+    /*position: relative;*/
+    width: 40px;
     height: 40px;
-    background-size: cover;
+    background-size: contain;
     background-image: url(assets/tshirt.svg);
-    background-position: center;
-    /*background-color: #81bce6;*/
-    padding: 2px;
-    margin: 2.5px;
-    /*justify-content: center;*/
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    text-align: center;
+    /*margin: 2.5px;
+    justify-content: center;*/
 }
 
 .large {
-    width: 95%;
+    width: 35px;
     height: 35px;
-    background-size: cover;
+    background-size: contain;
     background-image: url(assets/tshirt.svg);
-    background-position: center;
-    padding: 2px;
-    margin: 2.5px;
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    text-align: center;
     justify-content: center;
 }
 
 .medium {
-    width: 85%;
-    height: 25px;
-    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
     background-image: url(assets/tshirt.svg);
-    background-position: center;
-    padding: 2px;
-    margin: 2.5px;
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
     justify-content: center;
 }
 
 .small {
-    width: 75%;
-    height: 20px;
-    background-size: cover;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
     background-image: url(assets/tshirt.svg);
-    background-position: center;
-    padding: 2px;
-    margin: 2.5px;
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    text-align: center;
+    justify-content: center;
 }
 
 .colors {
