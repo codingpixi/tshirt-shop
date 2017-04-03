@@ -1,47 +1,47 @@
-
 let mouseClick = document.querySelector("body");
 mouseClick.addEventListener("click", logEvent);
+
 function logEvent() {
-  console.log(event);
-  }
+    console.log(event);
+}
 
-  var totalPrice = 0;
+var totalPrice = 0;
 
 
-  function shopCart1() {
-   let ul = document.querySelector("ul");
-   let li = document.createElement("li");
-   li.textContent = "Save my trees $29";
-   ul.appendChild(li);
-   totalPrice = totalPrice + 29;
-   let price = document.querySelector("#totalPrice");
-   price.textContent = totalPrice;
-  }
+function shopCart1() {
+    let ul = document.querySelector("ul");
+    let li = document.createElement("li");
+    li.textContent = "Save my trees $29";
+    ul.appendChild(li);
+    totalPrice = totalPrice + 29;
+    let price = document.querySelector("#totalPrice");
+    price.textContent = totalPrice;
+}
 
-  function shopCart2() {
-   let ul = document.querySelector("ul");
-   let li = document.createElement("li");
-   li.textContent = "Nature Lover $19";
-   ul.appendChild(li);
-   totalPrice = totalPrice + 19;
-   let price = document.querySelector("#totalPrice");
-   price.textContent = totalPrice;
-  }
+function shopCart2() {
+    let ul = document.querySelector("ul");
+    let li = document.createElement("li");
+    li.textContent = "Nature Lover $19";
+    ul.appendChild(li);
+    totalPrice = totalPrice + 19;
+    let price = document.querySelector("#totalPrice");
+    price.textContent = totalPrice;
+}
 
-  function shopCart3() {
-   let ul = document.querySelector("ul");
-   let li = document.createElement("li");
-   li.textContent = "Forrest Walk $39";
-   ul.appendChild(li);
-   totalPrice = totalPrice + 39;
-   let price = document.querySelector("#totalPrice");
-   price.textContent = totalPrice;
-  }
+function shopCart3() {
+    let ul = document.querySelector("ul");
+    let li = document.createElement("li");
+    li.textContent = "Forrest Walk $39";
+    ul.appendChild(li);
+    totalPrice = totalPrice + 39;
+    let price = document.querySelector("#totalPrice");
+    price.textContent = totalPrice;
+}
 
-  let purchaseShirt = document.querySelectorAll(".shopCart");
-  purchaseShirt[0].addEventListener('click', shopCart1);
-  purchaseShirt[1].addEventListener('click', shopCart2);
-  purchaseShirt[2].addEventListener('click', shopCart3);
+let purchaseShirt = document.querySelectorAll(".shopCart");
+purchaseShirt[0].addEventListener('click', shopCart1);
+purchaseShirt[1].addEventListener('click', shopCart2);
+purchaseShirt[2].addEventListener('click', shopCart3);
 
 
 

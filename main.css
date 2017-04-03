@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    color: #81bce6;
     /*-webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
         box-sizing: border-box;*/
@@ -15,8 +16,8 @@ h1 {
 }
 
 section p {
-  align-items: stretch;
-  padding: inherit;
+    align-items: stretch;
+    padding: inherit;
 }
 
 ul {
@@ -110,11 +111,11 @@ article img {
     color: white;
 }
 
-.size-button:hover + .size {
+.size-button:hover+.size {
     opacity: 1;
 }
 
-.size-button + .size{
+.size-button+.size {
     transition: opacity 2s;
 }
 
