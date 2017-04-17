@@ -126,12 +126,12 @@ article img {
     background: white;
     height: 150px;
     width: 50px;
-    /*padding: .25rem;
-    margin: 10px auto;*/
     bottom: 56px;
     align-items: center;
     border: 2px solid #81bce6;
     opacity: 0;
+    /*padding: .25rem;
+    margin: 10px auto;*/
 }
 
 .size img {
