@@ -111,8 +111,13 @@ article img {
     color: white;
 }
 
-.size-button:hover+.size {
-    opacity: 1;
+.size-button:hover .size {
+  visibility: visible;
+  opacity: 1;
+}
+
+.size:hover {
+  opacity: 1;
 }
 
 .size-button+.size {
@@ -120,6 +125,7 @@ article img {
 }
 
 .size {
+  /*visibility: visible;*/
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -187,10 +193,23 @@ article img {
     justify-content: center;
 }
 
+.color-button:hover .colors {
+  visibility: visible;
+  opacity: 1;
+}
+
+.color-button:hover {
+  opacity: 1;
+}
+
+.color-button+.colors{
+    transition: opacity 2s;
+}
+
 .colors {
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
+    flex-wrap: wrap;
     background: white;
     height: 70px;
     width: 65px;

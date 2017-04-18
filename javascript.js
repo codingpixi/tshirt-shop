@@ -19,4 +19,11 @@ function addToCart() {
   let $pickles = (`${$(this).parent().next().find('.price').text()}`);
   totalPrice = totalPrice + parseInt($pickles);
   $shirtPrices.text(totalPrice);
+};
+
+//tshirt size changes in box
+$('.submenuSize').on('click', changeSize);
+function changeSize() {
+  let $div = $('div');
+  console.log($(this).text());
 }
