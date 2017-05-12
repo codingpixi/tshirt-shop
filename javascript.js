@@ -1,9 +1,16 @@
-let mouseClick = document.querySelector("body");
-mouseClick.addEventListener("click", logEvent);
-
+let $allSubMenuItems = $(".submenuSize");
+$allSubMenuItems.on("click", changeSizes);
+// console.log($allSubMenuItems);
 function logEvent() {
   console.log('event'); //event was in parenthasis without signle quotes
 }
+
+let $allColors = $(".selectColor");
+$allColors.on("click", changeColors);
+function logEvent() {
+  console.log('event'); //event was in parenthasis without signle quotes
+}
+
 
 let totalPrice = 0;
 
@@ -22,8 +29,23 @@ function addToCart() {
 };
 
 //tshirt size changes in box
-$('.submenuSize').on('click', changeSize);
-function changeSize() {
-  let $div = $('div');
-  console.log($(this).text());
+// $('.submenuSize').on('click', changeSize);
+// function changeSize() {
+//   let $div = $('div');
+//   console.log($(this).text());
+// }
+
+//Change Size
+function changeSizes(event) {
+  let size = event.target.textContent;
+  // let smallSz = sizes.parentElement.
+  let sizeBox = event.target.closest('.size-button').firstChild;
+  sizeBox.textContent = size;
+}
+
+//Change Colors
+function changeColors(event) {
+  let color = event.target;
+  let colorBox = event.target.closest('.colors');
+  colorBox.textContent = color;
 }
