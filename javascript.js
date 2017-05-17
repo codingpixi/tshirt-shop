@@ -11,7 +11,6 @@ function logEvent() {
   console.log('event'); //event was in parenthasis without signle quotes
 }
 
-
 let totalPrice = 0;
 
 //Adding tshirts and price to shopping cart
@@ -28,6 +27,8 @@ function addToCart() {
   $shirtPrices.text(totalPrice);
 };
 
+each shirt var set = 0
+++ when = 7 disable
 //tshirt size changes in box
 // $('.submenuSize').on('click', changeSize);
 // function changeSize() {
@@ -38,14 +39,20 @@ function addToCart() {
 //Change Size
 function changeSizes(event) {
   let size = event.target.textContent;
-  // let smallSz = sizes.parentElement.
   let sizeBox = event.target.closest('.size-button').firstChild;
   sizeBox.textContent = size;
 }
 
-//Change Colors
-function changeColors(event) {
-  let color = event.target;
-  let colorBox = event.target.closest('.colors');
-  colorBox.textContent = color;
-}
+function changeColors() {
+    if ($(this).css('background-color') == 'rgb(129, 188, 230)') {
+      $(this).closest('.colors').siblings().attr('class', 'blue');
+    } else if ($(this).css('background-color') == 'rgb(226, 117, 167)') {
+      $(this).closest('.colors').siblings().attr('class', 'pink');
+    } else if ($(this).css('background-color') == 'rgb(229, 177, 120)') {
+      $(this).closest('.colors').siblings().attr('class','yellow');
+    } else {
+      $(this).closest('.colors').siblings().attr('class', 'green');
+    }
+};
+//THIS TAKES THE PLACE OF THE changeColors function above
+//$(this).closest.('.colors').siblings().attr('class'),$(this).attr('class')).

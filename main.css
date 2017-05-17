@@ -225,9 +225,21 @@ article img {
 .blue {
     width: 20px;
     height: 20px;
-    background-color: #81bce6;
+    background-color: rgb(129, 188, 230);
     padding: 1px;
     margin: 1.5px;
+    border: 1px solid white;
+    /*position: absolute;
+  left: 125px;*/
+}
+
+.blued {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(129, 188, 230);
+    padding: 1px;
+    margin: 1.5px;
+    border: 1px solid white;
     /*position: absolute;
   left: 125px;*/
 }
@@ -235,7 +247,7 @@ article img {
 .pink {
     width: 20px;
     height: 20px;
-    background-color: #e275a7;
+    background-color:rgb(226, 117, 167);
     justify-content: center;
     align-items: center;
     margin: 1.5px;
@@ -244,7 +256,7 @@ article img {
 .yellow {
     width: 20px;
     height: 20px;
-    background-color: #e5b178;
+    background-color: rgb(229,177,120);
     justify-content: center;
     align-items: center;
     margin: 1.5px;
@@ -253,7 +265,7 @@ article img {
 .green {
     width: 20px;
     height: 20px;
-    background-color: #8bb992;
+    background-color: rgb(139, 185, 146);
     justify-content: center;
     align-items: center;
     margin: 1.5px;
