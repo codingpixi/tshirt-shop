@@ -4,9 +4,6 @@ body {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     color: #81bce6;
-    /*-webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;*/
 }
 
 h1 {
@@ -29,7 +26,7 @@ ul {
 .container {
     position: relative;
     display: flex;
-    width: 1000px;
+    width: 1400px;
     background: white;
     margin: 0 auto;
 }
@@ -54,6 +51,9 @@ article img {
     line-height: 0;
 }
 
+/*
+    SHIRTS
+*/
 .front {
     position: absolute;
     transition: all 0.6s ease;
@@ -136,6 +136,7 @@ article img {
     align-items: center;
     border: 2px solid #81bce6;
     opacity: 0;
+    color: #81bce6;
 }
 
 .size img {
