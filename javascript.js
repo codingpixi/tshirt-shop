@@ -22,7 +22,7 @@ $('.shopCart').on('click', addToCart);
 
 //(this) means the the thing that was clicked - which is the shopping cart
 
-function addToCart() {
+function addToCart(event) {
   let item = {
     name: $(this).parent().next().find('p').text(),
     price: $(this).parent().next().find('span').text()
@@ -31,11 +31,17 @@ function addToCart() {
   console.log(maxShirt.length);
   console.log(maxShirt);
   console.log(shirtArr);
+  if (maxShirt.length > 7) {
+      console.log(this);
+      $(this).css("color", "red");
+      }
+      
   if (maxShirt.length <=7) {
     console.log($(this).parent().next().text());
     console.log(this);
     let $ul = $('ul');
-    let $li = $(`<li>${$(this).parent().next().text()}</li>`);
+    let name = $(this).parent().next().text();
+    let $li = $(`<li>${name}</li>`);
     $ul.append($li);
 
     shirtArr.push(item.name)
@@ -54,43 +60,18 @@ function addToCart() {
     $shirtPrices.text(totalPrice);
 
 
+
     if (totalPrices.length >= 5) {
       let totalPrice = $('#totalPrice').text()
       let discount = totalPrice * .05
       $('#discount').text('Discount ' + discount)
-      console.log(totalPrices);
-      let newPrice = totalPrices - discount
+      console.log(totalPrice);
+      let newPrice = totalPrice - discount
       $('#newPrice').text('NewPrice ' + newPrice)
     }
-
-
-
-
-
   }
-
 };
 
-
-
-// SHIRTS 5% DISCOUNT
-// function discount() {
-
-//   let $disc = totalPrice - $discAmount;
-//   if (shirtArr.length >= 5) {
-//     (.'price') * .05 - totalPrice
-//   } else () {
-//
-//   }
-// }
-
-
-
-
-// MAX PURCHASE 8 PER SHIRT
-
-// each shirt var set = 0
-// ++ when = 7 disable
 
 //Change Size
 function changeSizes(event) {
